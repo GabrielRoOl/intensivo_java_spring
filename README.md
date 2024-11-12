@@ -19,6 +19,8 @@ Relembrar e adquirir novos conhecimentos importantes de Java, POO, Spring Boot e
   }
    ```
 - **Implementar modelo de domínio**
+  - É frequentemente usado para representar dados recuperados de uma fonte de dados 
+- **Padrão DTO (Data Transfer Objects)**
 - **Acessar banco de dados**
 - **Implementar lógica de negócio**
 - **Aplicação prática de estruturas de dados**
@@ -26,3 +28,15 @@ Relembrar e adquirir novos conhecimentos importantes de Java, POO, Spring Boot e
 - **Preparar ambiente local com Docker e Docker Compose**
 - **Configurando ambiente Maven**
 - E muito mais
+--
+## O que aprendi até agora:
+- Conceitos
+  - Sistemas web e recursos
+  - Cliente/servidor, HTTP, JSON
+  - Padrão Rest para API web
+- Estruturação de projeto Spring Rest
+- Entidades e ORM
+- Database seeding
+- Padrão camadas
+- Controller, service, repository
+- Padrão DTO
