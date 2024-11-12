@@ -1,6 +1,5 @@
 package br.com.devsuperior.dslist.entities;
 
-import java.io.Serializable;
 import java.util.Objects;
 
 import jakarta.persistence.Column;
@@ -12,7 +11,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "tb_game")
-public class Game{
+public class Game {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,16 +23,18 @@ public class Game{
 	private String platforms;
 	private Double score;
 	private String imgUrl;
-	private String shortDescrition;
-	private String longDescrition;
 	
+	@Column(columnDefinition = "TEXT") // changing SQL VARCHAR type to TEXT
+	private String shortDescription;
 	
+	@Column(columnDefinition = "TEXT") // changing SQL VARCHAR type to TEXT
+	private String longDescription;
 
 	public Game() {
 	}
 
 	public Game(Long id, String title, Integer year, String genre, String platforms, Double score, String imgUrl,
-			String shortDescrition, String longDescrition) {
+			String shortDescription, String longDescription) {
 		super();
 		this.id = id;
 		this.title = title;
@@ -42,8 +43,8 @@ public class Game{
 		this.platforms = platforms;
 		this.score = score;
 		this.imgUrl = imgUrl;
-		this.shortDescrition = shortDescrition;
-		this.longDescrition = longDescrition;
+		this.shortDescription = shortDescription;
+		this.longDescription = longDescription;
 	}
 
 	public Long getId() {
@@ -103,19 +104,19 @@ public class Game{
 	}
 
 	public String getShortDescrition() {
-		return shortDescrition;
+		return shortDescription;
 	}
 
 	public void setShortDescrition(String shortDescrition) {
-		this.shortDescrition = shortDescrition;
+		this.shortDescription = shortDescrition;
 	}
 
 	public String getLongDescrition() {
-		return longDescrition;
+		return longDescription;
 	}
 
 	public void setLongDescrition(String longDescrition) {
-		this.longDescrition = longDescrition;
+		this.longDescription = longDescrition;
 	}
 
 	@Override
