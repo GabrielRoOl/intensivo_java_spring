@@ -11,4 +11,5 @@ Relembrar e adquirir novos conhecimentos importantes de Java, POO, Spring Boot e
 - Aplicação prática de estruturas de dados
 - Boas práticas e padrões
 - Preparar ambiente local com Docker e Docker Compose
+- Configurando ambiente Maven
 - E muito mais
