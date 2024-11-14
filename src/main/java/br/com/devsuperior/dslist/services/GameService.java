@@ -26,9 +26,8 @@ public class GameService {
 	@Transactional(readOnly= true)	// garante o ACID (Atomicidade, Consistência, Isolamento, Durabilidade)
 	public List<GameMinDTO> findAll() {
 		var result = gameRepository.findAll(); // var é o mesmo que List<Game>
-		List<GameMinDTO> dto = result.stream().map(x -> new GameMinDTO(x)).toList(); // Operação para transformar uma
-																						// lista de Game para GameMinDTO
+		List<GameMinDTO> dto = result.stream().map(x -> new GameMinDTO(x)).toList(); // Operação para transformar uma																	// lista de Game para GameMinDTO
 		return dto;
 	}
-
+	
 }
