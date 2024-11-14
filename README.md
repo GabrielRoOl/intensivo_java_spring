@@ -40,3 +40,7 @@ Relembrar e adquirir novos conhecimentos importantes de Java, POO, Spring Boot e
 - Padrão camadas
 - Controller, service, repository
 - Padrão DTO
+- Relacionamento N - N
+- CLasse de associação, embedded id
+- Consultas SQL no Spring Data JPA
+- Projections
