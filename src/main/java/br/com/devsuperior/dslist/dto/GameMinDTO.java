@@ -1,6 +1,7 @@
 package br.com.devsuperior.dslist.dto;
 
 import br.com.devsuperior.dslist.entities.Game;
+import br.com.devsuperior.dslist.projections.GameMinProjection;
 
 public class GameMinDTO {	// Customisso a minha lista de "reprodução"
 
@@ -20,6 +21,16 @@ public class GameMinDTO {	// Customisso a minha lista de "reprodução"
 		imgUrl = entity.getImgUrl();
 		shortDescription = entity.getShortDescrition();
 	}
+	
+	public GameMinDTO(GameMinProjection projection) { // Instancia um GameMinDTO a partir de um classe Game
+		super();
+		id = projection.getId();
+		title = projection.getTitle();
+		year = projection.getYear();
+		imgUrl = projection.getImgUrl();
+		shortDescription = projection.getShortDescrition();
+	}
+
 
 	public Long getId() {
 		return id;
