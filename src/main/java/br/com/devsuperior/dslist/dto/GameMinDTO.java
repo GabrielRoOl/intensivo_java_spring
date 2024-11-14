@@ -2,7 +2,7 @@ package br.com.devsuperior.dslist.dto;
 
 import br.com.devsuperior.dslist.entities.Game;
 
-public class GameMinDTO {
+public class GameMinDTO {	// Customisso a minha lista de "reprodução"
 
 	private Long id;
 	private String title;
